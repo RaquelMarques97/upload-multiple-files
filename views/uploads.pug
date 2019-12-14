@@ -1,0 +1,8 @@
+doctype html
+title uploads app
+body
+    h1 Upload a file
+    form(action=`/uploads`, method="POST", enctype="multipart/form-data")
+        h2 Attention! Only PNG with less than 3MB are accepted!
+        input(type="file", name="myfile" accept="image/png" multiple)
+        input(type="submit" value="Send") 
